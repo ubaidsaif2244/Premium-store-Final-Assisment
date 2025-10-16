@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Asimovian&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Castoro+Titling&family=Castoro:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Round&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Story+Script&family=Tenor+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Asimovian&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Castoro+Titling&family=Castoro:ital@0;1&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Round&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Story+Script&family=Tenor+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Asimovian&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Castoro+Titling&family=Castoro:ital@0;1&family=Dancing+Script:wght@400..700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nova+Round&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Saira:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&family=Story+Script&family=Tenor+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --brand-brown: #867551;
+    --brand-main: #c7543e;
+    --bg-hero: #f7e7d4;
+    --bg-paper: #f8f6f1;
+    --brand-dark: #2a2722;
+    --border-radius: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* font-family: 'Times New Roman', serif; */
+    background: #f9f7f0;
+    color: #2a2722;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Navbar styles */
+header {
+    background: var(--bg-paper);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    font-weight: 900;
+    font-size: 2rem;
+    font-family: 'Castoro Titling', 'SUSE Mono', 'Josifen Sans', 'Alumni Sans Pinstripe';
+    letter-spacing: 0.1px;
+    color: #867551;
+    text-decoration: line-through;
+    cursor: default;
+}
+
+/* Navigation */
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+
+}
+
+nav li {
+    position: relative;
+}
+
+nav a {
+    font-weight: 300;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', sans-serif;
+    padding: 5px 0;
+    position: relative;
+    color: #000;
+    letter-spacing: 0.02em;
+    transition: color 0.2s ease;
+}
+
+/* Underline hover animation */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #c7543e;
+    border-radius: 1px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a:focus::after {
+    width: 100%;
+}
+
+/* Change link color on hover */
+nav a:hover,
+nav a:focus {
+    color: #c7543e;
+}
+
+/* Icons on right */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.nav-icons .nav-btns {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.nav-icons button:hover {
+    background-color: #c5948b;
+}
+
+
+.nav-icons .nav-btns:hover,
+.nav-icons .nav-btns:hover {
+    color: #c5948b;
+}
+
+/* Hamburger menu button - hidden on large screens */
+.menu-toggle {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #2a2722;
+    background: none;
+    border: none;
+}
+
+@media (max-width: 900px) {
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.97);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.35s ease, opacity 0.35s ease;
+        z-index: 999;
+    }
+
+    nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5rem 0;
+        gap: 1.2rem;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: inline-block;
+        font-size: 1.05rem;
+        padding: 0.5rem;
+    }
+
+    /* Show hamburger */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+        background: none;
+        border: none;
+        font-size: 1.8rem;
+        color: #2a2722;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .menu-toggle.open {
+        transform: rotate(90deg);
+    }
+
+    /* Hide right-side icons when menu open */
+    .nav-icons {
+        display: none;
+    }
+}
+
+
+

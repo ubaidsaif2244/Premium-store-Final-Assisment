@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MATOA</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a2e0e6f6d1.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container nav-inner">
+            <div class="logo" aria-label="Matoa logo">M O T O A</div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars "></i>
+            </button>
+
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="./">Watches</a></li>
+                    <li><a href="./eyeglasses.html">Eyewear</a></li>
+                    <li><a href="./accessories.html">Accessories</a></li>
+                    <li><a href="./news.html">News</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-icons">
+                <a href="#"><i class="fa-regular fa-user nav-btns"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-btns"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SLIDER ===== -->
+    <section class="hero-slider-section" aria-label="Featured products slider">
+        <svg class="hero-svg-overlay" viewBox="0 0 260 180" fill="none">
+            <polyline points="0,92 56,5 124,74 201,15 267,120" stroke="#c7543e" stroke-width="3" opacity=".31" />
+            <polyline points="36,158 101,73 211,110" stroke="#c7543e" stroke-width="2" opacity=".31" />
+        </svg>
+
+        <div class="hero-slider-wrapper" id="slider-wrapper">
+            <!-- Slide Template -->
+            <section class="hero-slide">
+                <div class="hero-slide-image">
+                    <img src="assets/imgs/img-watch-removebg-preview.png" alt="Way Kambas Mini Ebony watch" />
+                </div>
+                <div class="hero-slide-content">
+                    <h1>WAY KAMBAS<br />MINI EBONY</h1>
+                    <p>
+                        MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin,
+                        with overlapping strap design symbolizing its texture.
+                    </p>
+                    <a class="discover-link">Discover</a>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Add to cart</button>
+                        <button class="btn btn-secondary">Cicil</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero-slide">
+                <div class="hero-slide-image">
+                    <img src="assets/imgs/wood-glas.png" alt="Wooden Eyewear" />
+                </div>
+                <div class="hero-slide-content">
+                    <h1>WOODEN EYEWEAR</h1>
+                    <p>
+                        Modern, eco-friendly eyewear crafted from sustainable wood.
+                        Lightweight, stylish, and unique — express yourself!
+                    </p>
+                    <a class="discover-link">Discover</a>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Shop Now</button>
+                        <button class="btn btn-secondary">Learn More</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hero-slide">
+                <div class="hero-slide-image">
+                    <img src="./assets/imgs/PREMIUM ACCESSORIES.png" alt="Premium Accessories" />
+                </div>
+                <div class="hero-slide-content">
+                    <h1>PREMIUM ACCESSORIES</h1>
+                    <p>
+                        Discover accessories crafted with nature’s essence,
+                        blending sophistication with timeless design.
+                    </p>
+                    <a class="discover-link">Discover</a>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">Explore</button>
+                        <button class="btn btn-secondary">Order Now</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Controls -->
+        <button class="slider-arrow prev" id="prev-slide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow next" id="next-slide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="slider-dots" id="slider-dots"></div>
+    </section>
+
+    <!-- ===== PROMOTION ===== -->
+    <section class="promo-section">
+        <div class="promo-container">
+
+            <div class="promo-card" data-name="Luxurious Eyewear"
+                data-desc="See the beauty of exotic world with the luxurious glasses"
+                data-img="assets/imgs/promotion-1.png" data-price="Rs. 3,499"
+                data-material="Wooden Frame + Polarized Lens" data-rating="4.7 / 5" data-color="Brown, Black, Ash">
+                <div class="promo-content">
+                    <h3>Luxurious <span>Eyewear</span></h3>
+                    <p>See the beauty of exotic world with the luxurious glasses</p>
+                    <a href="#" class="btn discover-btn">Discover Now</a>
+                </div>
+                <div class="promo-img">
+                    <img src="assets/imgs/promotion-1.png" alt="Eyewear">
+                </div>
+            </div>
+
+            <div class="promo-card" data-name="Comfortable Watch"
+                data-desc="Feel the perfect balance of function and beauty with our wooden watches"
+                data-img="./assets/imgs/promotion-2.png" data-price="Rs. 5,999"
+                data-material="Maple Wood + Quartz Movement" data-rating="4.9 / 5"
+                data-color="Light Brown, Dark Walnut">
+                <div class="promo-content">
+                    <h3>Comfortable <span>Watch</span></h3>
+                    <p>Feels the balancing function and beauty in our wooden watches</p>
+                    <a href="#" class="btn discover-btn">Discover Now</a>
+                </div>
+                <div class="promo-img">
+                    <img src="./assets/imgs/promotion-2.png" alt="Watch">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== PRODUCT MODAL ===== -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImg" alt="Product Image" />
+            <h2 id="modalName"></h2>
+            <p id="modalDesc"></p>
+            <div class="modal-extra">
+                <p><strong>Price:</strong> <span id="modalPrice"></span></p>
+                <p><strong>Material:</strong> <span id="modalMaterial"></span></p>
+                <p><strong>Rating:</strong> <span id="modalRating"></span></p>
+                <p><strong>Colors:</strong> <span id="modalColor"></span></p>
+            </div>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- ===== MONTHLY DEALS ===== -->
+    <section class="deals-section">
+        <h2 class="section-title">Monthly Deals</h2>
+        <div class="deals-grid">
+
+            <!-- Product Template -->
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="./assets/imgs/md-1.jpg" alt="Singo Maple" />
+                </div>
+                <div class="product-info">
+                    <h3>Singo Maple</h3>
+                    <p class="discount">20% OFF</p>
+                    <p class="old-price">Rp 1.580.000</p>
+                    <p class="new-price">Rp 1.264.000</p>
+                </div>
+                <div class="actions">
+                    <button class="btn wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="./assets/imgs/md-2.jpg" alt="Singo Ebony" />
+                </div>
+                <div class="product-info">
+                    <h3>Singo Ebony</h3>
+                    <p class="discount">20% OFF</p>
+                    <p class="old-price">Rp 1.580.000</p>
+                    <p class="new-price">Rp 1.264.000</p>
+                </div>
+                <div class="actions">
+                    <button class="btn wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/md-3.jpg" alt="Rakai Ebony" />
+                </div>
+                <div class="product-info">
+                    <h3>Rakai Ebony</h3>
+                    <p class="discount">15% OFF</p>
+                    <p class="old-price">Rp 1.320.000</p>
+                    <p class="new-price">Rp 1.118.000</p>
+                </div>
+                <div class="actions">
+                    <button class="btn wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="img-wrapper">
+                    <img src="assets/imgs/MD-4.jpg" alt="Way Kambas Mini Maple" />
+                </div>
+                <div class="product-info">
+                    <h3>Way Kambas Maple</h3>
+                    <p class="discount">10% OFF</p>
+                    <p class="old-price">Rp 1.140.000</p>
+                    <p class="new-price">Rp 1.024.000</p>
+                </div>
+                <div class="actions">
+                    <button class="btn wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    <button class="btn btn-primary">Add to cart</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========News Section=========== -->
+
+    <section class="recent-news">
+
+    </section>
+
+    <!-- ===== PRODUCT SECTION ===== -->
+    <section class="product-section">
+
+        <!-- 🌿 MAPLE SERIES -->
+        <div class="series" id="maple-series">
+            <h3>Maple Series</h3>
+
+            <!-- Left Image Box -->
+            <div class="products">
+                <img id="maple-main-img" src="./assets/imgs/mapll-1.png" alt="Maple Watch">
+            </div>
+
+            <!-- Right Product Details -->
+            <div class="details">
+                <div class="product" data-img="./assets/imgs/mapll-1.png">
+                    <p>Way Kambas Maple</p>
+                    <h4>Rp 1.280.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/maple-2.png">
+                    <p>Kaili</p>
+                    <h4>Rp 950.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/mapl-3.png">
+                    <p>Sunda</p>
+                    <h4>Rp 1.170.000</h4>
+                </div>
+                <a href="#" class="see-more-btn">See More →</a>
+            </div>
+        </div>
+
+        <!-- 🌑 EBONY SERIES -->
+        <div class="series" id="ebony-series">
+            <h3>Ebony Series</h3>
+
+            <div class="products">
+                <img id="ebony-main-img" src="./assets/imgs/ebony-1.png" alt="Ebony Watch">
+            </div>
+
+            <div class="details">
+                <div class="product" data-img="./assets/imgs/ebony-1.png">
+                    <p>Tomia Ebony</p>
+                    <h4>Rp 960.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/ebony-2.png">
+                    <p>Mori</p>
+                    <h4>Rp 950.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/ebony-3.png">
+                    <p>Alor</p>
+                    <h4>Rp 1.170.000</h4>
+                </div>
+                <a href="#" class="see-more-btn">See More →</a>
+            </div>
+        </div>
+
+        <!-- ⭐ FEATURED SERIES -->
+        <div class="series" id="featured-series">
+            <h3>Featured</h3>
+
+            <div class="products">
+                <img id="featured-main-img" src="./assets/imgs/featured-1.png" alt="Featured Watch">
+            </div>
+
+            <div class="details">
+                <div class="product" data-img="./assets/imgs/featured-1.png">
+                    <p>Sikka (Ebony & Maple)</p>
+                    <h4>Rp 1.198.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/feature-2.png">
+                    <p>Lore Walnut</p>
+                    <h4>Rp 1.280.000</h4>
+                </div>
+                <div class="product" data-img="./assets/imgs/feature-3.png">
+                    <p>Way Kambas Limited Edition</p>
+                    <h4>Rp 1.170.000</h4>
+                </div>
+                <a href="#" class="see-more-btn">See More →</a>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+        <!-- <div class="footer-top">
+            <div class="payment-logos">
+                <img src="assets/imgs/footer-1.jpg" alt="BNI" />
+                <img src="images/premier.png" alt="Premier" />
+                <img src="images/mastercard.png" alt="MasterCard" />
+                <img src="images/visa.png" alt="VISA" />
+                <img src="images/mandiri.png" alt="Mandiri" />
+                <img src="images/kredivo.png" alt="Kredivo" />
+                <img src="images/uob.png" alt="UOB" />
+                <img src="images/gopay.png" alt="GOPAY" />
+                <img src="images/standard.png" alt="Standard Chartered" />
+            </div>
+        </div> -->
+
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="logo">MATOA</h3>
+                 <p>
+                    Store & Office<br />
+                    H11 Blue Area Islambad 7600<br />
+                    Street 2, Blue Street<br />
+                    Islamabad, Pakistan
+                </p>
+                <p><strong>Office Hour</strong><br />Monday - Sunday<br />10.00 - 18.00</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Get in touch</h4>
+                <p><strong>Phone:</strong> +92 326 2905732</p>
+                <p><strong>Service Center:</strong> 021 111 011</p>
+                <p><strong>Customer Service:</strong> 0811-22344</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Useful Link</h4>
+                <ul>
+                    <li><a href="#">Warranty & Complaints</a></li>
+                    <li><a href="#">Order & Shipping</a></li>
+                    <li><a href="#">Tracking Order</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Repair</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Campaign</h4>
+                <ul>
+                    <li><a href="#">Menangi Arti Cukup</a></li>
+                    <li><a href="#">Tell Your Difference</a></li>
+                    <li><a href="#">Waykambas</a></li>
+                    <li><a href="#">Richmond</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Retail</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 MATOA Store | Designed with ❤️ in Pakistan</p>
+        </div>
+    </footer>
+    </section>
+    <div id="footer"></div>
+</body>
+<!-- Scripts -->
+<script src="js/script.js"></script>
+
+</html>
