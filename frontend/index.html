@@ -27,16 +27,20 @@
 
             <nav>
                 <ul id="nav-links">
-                    <li><a href="./">Watches</a></li>
-                    <li><a href="./eyeglasses.html">Eyewear</a></li>
-                    <li><a href="./accessories.html">Accessories</a></li>
-                    <li><a href="./news.html">News</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Watches</a></li>
+                    <li><a href="eyeglasses.html">Eyewear</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="news.html">News</a></li>
                 </ul>
             </nav>
 
             <div class="nav-icons">
-                <a href="#"><i class="fa-regular fa-user nav-btns"></i></a>
-                <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-btns"></i></a>
+                <a href="#" class="user-icon"><i class="fa-regular fa-user nav-btns"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping nav-btns"></i>
+                    <span class="cart-counter" id="cartCounter">0</span>
+                </a>
             </div>
         </div>
     </header>
@@ -347,7 +351,7 @@
                 <h3 class="logo">MATOA</h3>
                  <p>
                     Store & Office<br />
-                    H11 Blue Area Islambad 7600<br />
+                    H11 Blue Area Islamabad 7600<br />
                     Street 2, Blue Street<br />
                     Islamabad, Pakistan
                 </p>
@@ -403,5 +407,7 @@
 </body>
 <!-- Scripts -->
 <script src="js/script.js"></script>
+<script src="js/api-service.js"></script>
+<script src="js/auth.js"></script>
 
 </html>

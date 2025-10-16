@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>product-page</title>
+    <title>Shopping Cart | MATOA</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
-<style>
-
-</style>
-
 <body>
+    <!-- ===== HEADER ===== -->
     <header>
         <div class="container nav-inner">
-            <div class="logo" aria-label="Matoa logo"><a href="index.html">M A T O A</a></div>
+            <div class="logo" aria-label="Matoa logo">
+                <a href="index.html">M A T O A</a>
+            </div>
 
             <button class="menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
 
             <nav>
-               <ul id="nav-links">
+                <ul id="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="product.html">Watches</a></li>
                     <li><a href="eyeglasses.html">Eyewear</a></li>
@@ -33,56 +33,67 @@
 
             <div class="nav-icons">
                 <a href="#" class="user-icon"><i class="fa-regular fa-user nav-btns"></i></a>
-                <a href="./cart.html" class="cart-icon">
+                <a href="cart.html" class="cart-icon">
                     <i class="fa-solid fa-cart-shopping nav-btns"></i>
                     <span class="cart-counter" id="cartCounter">0</span>
                 </a>
             </div>
         </div>
     </header>
-    <!-- 🟢 Header -->
-    <div class="hero small-hero">
-        <h1>Explore Our Premium Watch Collection</h1>
-        <p>Choose from Maple, Ebony, and Walnut Series</p>
-    </div>
 
-    <!-- 🟠 Product Filter (Future Use) -->
-    <div class="filter-bar">
-        <select id="categoryFilter">
-            <option value="all">All Categories</option>
-            <option value="Maple">Maple Series</option>
-            <option value="Ebony">Ebony Series</option>
-            <option value="Walnut">Walnut Series</option>
-        </select>
-    </div>
-
-    <!-- 🟡 Products Section -->
-    <section class="products-container">
-        <div class="products-grid" id="productGrid"></div>
-    </section>
-    <footer class="footer" id="footer">
-        <!-- <div class="footer-top">
-            <div class="payment-logos">
-                <img src="assets/imgs/footer-1.jpg" alt="BNI" />
-                <img src="images/premier.png" alt="Premier" />
-                <img src="images/mastercard.png" alt="MasterCard" />
-                <img src="images/visa.png" alt="VISA" />
-                <img src="images/mandiri.png" alt="Mandiri" />
-                <img src="images/kredivo.png" alt="Kredivo" />
-                <img src="images/uob.png" alt="UOB" />
-                <img src="images/gopay.png" alt="GOPAY" />
-                <img src="images/standard.png" alt="Standard Chartered" />
+    <!-- ===== CART CONTENT ===== -->
+    <main class="cart-main">
+        <div class="container">
+            <h1 class="cart-title">Shopping Cart</h1>
+            
+            <!-- Cart Items -->
+            <div class="cart-content">
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be loaded here -->
+                </div>
+                
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="cartShipping">Free</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="cartTotal">$0.00</span>
+                    </div>
+                    <button class="checkout-btn" id="checkoutBtn">
+                        <i class="fas fa-credit-card"></i>
+                        Proceed to Checkout
+                    </button>
+                </div>
             </div>
-        </div> -->
+            
+            <!-- Empty Cart -->
+            <div class="empty-cart" id="emptyCart" style="display: none;">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Your cart is empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="index.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </div>
+    </main>
 
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
         <div class="footer-content">
             <div class="footer-column">
                 <h3 class="logo">MATOA</h3>
                 <p>
                     Store & Office<br />
-                    Jl. Setrasari Kulon III, No. 10-12,<br />
-                    Sukasari, Sukasari, Bandung,<br />
-                    Jawa Barat, Indonesia 40152
+                    H11 Blue Area Islamabad 7600<br />
+                    Street 2, Blue Street<br />
+                    Islamabad, Pakistan
                 </p>
                 <p><strong>Office Hour</strong><br />Monday - Sunday<br />10.00 - 18.00</p>
             </div>
@@ -132,13 +143,9 @@
         </div>
     </footer>
 
-    <!-- Font Awesome for social icons -->
-    <script src="https://kit.fontawesome.com/a2e0e6f6d1.js" crossorigin="anonymous"></script>
-
+    <script src="js/script.js"></script>
+    <script src="js/api-service.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
 </body>
-<script src="js/script.js"></script>
-<script src="js/api-service.js"></script>
-<script src="js/auth.js"></script>
-<script src="js/product-page.js"></script>
-
 </html>

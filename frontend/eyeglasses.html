@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a2e0e6f6d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
 </head>
 
 <body>
@@ -22,16 +23,20 @@
 
             <nav>
                 <ul id="nav-links">
-                    <li><a href="./product.html">Watches</a></li>
-                    <li><a href="./eyeglasses.html">Eyewear</a></li>
-                    <li><a href="./accessories.html">Accessories</a></li>
-                    <li><a href="./news.html">News</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Watches</a></li>
+                    <li><a href="eyeglasses.html">Eyewear</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                    <li><a href="news.html">News</a></li>
                 </ul>
             </nav>
 
             <div class="nav-icons">
-                <a href="#"><i class="fa-regular fa-user nav-btns"></i></a>
-                <a href="./cart.html"><i class="fa-solid fa-cart-shopping nav-btns"></i></a>
+                <a href="#" class="user-icon"><i class="fa-regular fa-user nav-btns"></i></a>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping nav-btns"></i>
+                    <span class="cart-counter" id="cartCounter">0</span>
+                </a>
             </div>
         </div>
     </header>
@@ -139,6 +144,75 @@
             <p>© 2025 MATOA Store | Designed with ❤️ in Pakistan</p>
         </div>
     </footer>
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="modal-image" id="modalImage" src="" alt="Product Image">
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle">Product Name</h2>
+                <span class="modal-category" id="modalCategory">Category</span>
+                
+                <div class="stock-status in-stock" id="modalStock">
+                    <span class="stock-indicator"></span>
+                    <span>In Stock</span>
+                </div>
+                
+                <div class="modal-price" id="modalPrice">$0</div>
+                
+                <div class="modal-rating" id="modalRating">
+                    <div class="stars" id="modalStars"></div>
+                    <span class="rating-text" id="modalRatingText">No ratings yet</span>
+                </div>
+                
+                <p class="modal-description" id="modalDescription">
+                    Product description will appear here...
+                </p>
+                
+                <div class="product-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Material</div>
+                        <div class="detail-value" id="modalMaterial">Not specified</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Category</div>
+                        <div class="detail-value" id="modalCategoryDetail">Eyewear</div>
+                    </div>
+                    <div class="detail-item" id="discountSection" style="display: none;">
+                        <div class="detail-label">Discount</div>
+                        <div class="detail-value" id="modalDiscount">0% OFF</div>
+                    </div>
+                </div>
+                
+                <div class="color-options" id="colorSection" style="display: none;">
+                    <div class="color-title">Available Colors:</div>
+                    <div class="color-list" id="modalColors"></div>
+                </div>
+                
+                <div class="modal-actions">
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseQty">-</button>
+                        <input type="number" class="quantity-input" id="modalQuantity" value="1" min="1" max="10">
+                        <button class="quantity-btn" id="increaseQty">+</button>
+                    </div>
+                    
+                    <button class="modal-add-to-cart" id="modalAddToCart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    
+                    <button class="wishlist-btn" id="modalWishlist">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="js/cart.js"></script>
+<script src="js/script.js"></script>
+<script src="js/api-service.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/eyeglasses.js"></script>
 </html>
